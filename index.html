@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messagerie</title>
+    <link rel="stylesheet" href="Messagerie.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Messagerie</h1>
+    </header>
+    <main>
+        <section class="login">
+            <h2>Connectez-vous</h2>
+            <form action="#" method="POST">
+                <label for="phone">Numéro de téléphone :</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1234567890" required>
+                <button type="submit">Se connecter</button>
+            </form>
+        </section>
+        <section class="chat">
+            <div class="chat-header">
+                <h2>Chat</h2>
+            </div>
+            <div class="chat-box">
+                <div class="message received">
+                    <p>Bonjour !</p>
+                </div>
+                <div class="message sent">
+                    <p>Salut ! Comment ça va ?</p>
+                </div>
+            </div>
+            <div class="message-input">
+                <input type="text" placeholder="Écrivez un message...">
+                <button type="button">Envoyer</button>
+            </div>
+        </section>
+    </main>
+    <script src="Messagerie.js"></script>
+</body>
+</html>
