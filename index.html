@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Programme d'Excellence - WhatsApp Live</title>  
+  <style>  
+    body {font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background: #f4f4f9;}  
+    header {background: #2c3e50; color: white; padding: 30px 20px; text-align: center;}  
+    header h1 {margin: 0; font-size: 2.5em;}  
+    header p {font-size: 1.2em; margin-top: 10px;}  
+    nav {background: #34495e; padding: 10px; text-align: center;}  
+    nav a {color: white; text-decoration: none; margin: 0 15px; font-weight: bold;}  
+    section {padding: 40px 20px; max-width: 1000px; margin: auto;}  
+    h2 {color: #2c3e50; margin-bottom: 20px;}  
+    .program-day {background: white; margin-bottom: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}  
+    .speaker {display: flex; align-items: center; margin-bottom: 20px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}  
+    .speaker img {width: 80px; height: 80px; border-radius: 50%; margin-right: 20px;}  
+    .speaker div {flex: 1;}  
+    .countdown {font-size: 1.2em; font-weight: bold; color: #e74c3c; margin-top: 10px;}  
+    footer {background: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px;}  
+    .btn {display: inline-block; padding: 10px 20px; margin-top: 15px; background: #27ae60; color: white; border-radius: 5px; text-decoration: none;}  
+    .btn:hover {background: #219150;}  
+  </style>  
+</head>  
+<body>  
+  <header>  
+    <h1>Programme d'Excellence</h1>  
+    <p>WhatsApp Live | 01 – 05 Octobre 2025</p>  
+    <div id="countdown" class="countdown"></div>  
+    <a href="https://chat.whatsapp.com/JnEG13M6Zpk2LB85yLtRE8" class="btn">👉 Rejoindre le panel WhatsApp</a>  
+  </header>  
+
+  <nav>  
+    <a href="#programme">Programme</a>  
+    <a href="#intervenants">Intervenants</a>  
+    <a href="#apropos">À propos</a>  
+    <a href="#contact">Contact</a>  
+  </nav>  
+
+  <section id="programme">  
+    <h2>📅 Programme (01 - 05 Octobre)</h2>  
+    <div class="program-day">  
+      <h3>Jour 1 : L’Appel à l’Excellence</h3>  
+      <p>Avec Min. Melchi – Comprendre l’excellence dans la Bible & prière de consécration.</p>  
+    </div>  
+    <div class="program-day">  
+      <h3>Jour 2 : La Puissance de la Décision</h3>  
+      <p>Avec Min. Melchi – Le choix qui change une vie, boost spirituel et démonstration.</p>  
+    </div>  
+    <div class="program-day">  
+      <h3>Jour 3 : Idées de Création d’Entreprise</h3>  
+      <p>Avec Sœur YENA Nadège – Entreprendre selon Dieu avec différents budgets.</p>  
+    </div>  
+    <div class="program-day">  
+      <h3>Jour 4 : Excellence Académique & Professionnelle</h3>  
+      <p>Avec Frère Lyon – Briller à l’école et au travail comme jeune chrétien.</p>  
+    </div>  
+    <div class="program-day">  
+      <h3>Jour 5 : Clôture & Impartition</h3>  
+      <p>Panel des 3 intervenants + Prière d’impartation finale avec Min. Melchi.</p>  
+    </div>  
+  </section>  
+
+  <section id="intervenants">  
+    <h2>🎤 Nos Intervenants</h2>  
+    <div class="speaker">  
+      <img src="mel.jpg" alt="Min. Melchi">  
+      <div>  
+        <h3>Min. Melchi</h3>  
+        <p>Aspect spirituel, boostage et démonstration de la puissance de la décision.</p>  
+        <div id="melchi-countdown" class="countdown"></div>  
+      </div>  
+    </div>  
+    <div class="speaker">  
+      <img src="nad.jpg" alt="Sœur YENA Nadège">  
+      <div>  
+        <h3>Sœur YENA Nadège</h3>  
+        <p>Idées de création d’entreprise et orientation pour différents budgets.</p>  
+        <div id="nadege-countdown" class="countdown"></div>  
+      </div>  
+    </div>  
+    <div class="speaker">  
+      <img src="lyon.jpg" alt="Frère Lyon">  
+      <div>  
+        <h3>Frère Lyon</h3>  
+        <p>Excellence professionnelle et académique en tant que jeune chrétien.</p>  
+        <div id="lyon-countdown" class="countdown"></div>  
+      </div>  
+    </div>  
+  </section>  
+
+  <section id="apropos">  
+    <h2>ℹ️ À propos</h2>  
+    <p>Ce programme est une initiative pour propulser chaque chrétien vers l’excellence,   
+    dans sa vie spirituelle, entrepreneuriale et professionnelle. Pendant 5 jours intenses,   
+    vous serez équipés, boostés et préparés pour impacter votre génération.</p>  
+  </section>  
+
+  <section id="contact">  
+    <h2>📞 Contact</h2>  
+    <p>Pour plus d’informations ou pour toute question, rejoignez-nous directement sur WhatsApp :</p>  
+    <a href="https://wa.me/22964013074" class="btn">📲 Contacter sur WhatsApp</a>  
+  </section>  
+
+  <footer>  
+    <p>&copy; 2025 Programme d’Excellence | Tous droits réservés</p>  
+  </footer>  
+
+  <script>  
+    // Compte à rebours général  
+    const countdown = document.getElementById('countdown');  
+    const eventDate = new Date("Oct 1, 2025 00:00:00").getTime();  
+    const timer = setInterval(function() {  
+      const now = new Date().getTime();  
+      const distance = eventDate - now;  
+  
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));  
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));  
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));  
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);  
+  
+      if (distance > 0) {  
+        countdown.innerHTML = `⏳ Début dans ${days}j ${hours}h ${minutes}m ${seconds}s`;  
+      } else {  
+        clearInterval(timer);  
+        countdown.innerHTML = "🚀 Le programme est en cours !";  
+      }  
+    }, 1000);  
+
+    // Intervenants  
+    function setCountdown(elementId, dateString) {  
+      const el = document.getElementById(elementId);  
+      const target = new Date(dateString).getTime();  
+
+      setInterval(() => {  
+        const now = new Date().getTime();  
+        const diff = target - now;  
+
+        const d = Math.floor(diff / (1000 * 60 * 60 * 24));  
+        const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));  
+        const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));  
+        const s = Math.floor((diff % (1000 * 60)) / 1000);  
+
+        if (diff > 0) {  
+          el.innerHTML = `⏳ Dans ${d}j ${h}h ${m}m ${s}s`;  
+        } else {  
+          el.innerHTML = "🚀 En cours ou terminé !";  
+        }  
+      }, 1000);  
+    }  
+
+    // Dates spécifiques (à ajuster si besoin)  
+    setCountdown("melchi-countdown", "Oct 1, 2025 21:00:00");  
+    setCountdown("nadege-countdown", "Oct 3, 2025 21:00:00");  
+    setCountdown("lyon-countdown", "Oct 4, 2025 21:00:00");  
+  </script>  
+</body>  
+</html>
